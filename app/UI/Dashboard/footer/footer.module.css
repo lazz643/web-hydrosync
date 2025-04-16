@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #66d9ff;
+}
+
+.logo{
+    font-weight: bold;
+}
+
+.texts{
+    font-size: 13px;
+}

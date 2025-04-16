@@ -1,0 +1,88 @@
+.container {
+    background-color: var(--bgSoft);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addButton {
+    padding: 10px;
+    background-color: darkcyan;
+    color: var(--text);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+    background-color: darkslategray;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid var(--borderColor);
+    text-align: left;
+}
+
+.table th {
+    background-color: var(--bgSecondary);
+    color: var(--textPrimary);
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: var(--bgSoftAlt);
+}
+
+.Pelanggan {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.UserImage {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 10px;
+    border-radius: 7px;
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view {
+    background-color: #4dff4d;
+}
+
+.view:hover {
+    background-color: #3dbf3d;
+}
+
+.delete {
+    background-color: #e62e00;
+}
+
+.delete:hover {
+    background-color: #cc2900;
+}

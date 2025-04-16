@@ -1,0 +1,42 @@
+.container{
+    background-color: var(--bgSoft);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container:hover{
+    background-color: #66d9ff;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.ammount{
+    font-size: 16px;
+    font-weight: 350;
+}
+
+.detail{
+    font-size: 14px;
+    font-weight: 250;
+}
+
+.positive{
+    color: #47d147;
+}
+
+.negative{
+    color: #ff3300;
+}

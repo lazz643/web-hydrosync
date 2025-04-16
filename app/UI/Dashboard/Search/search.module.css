@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color:  #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    width: max-content;
+}
+
+.input{
+    background-color: transparent;
+    border: none;
+    color: grey;
+    outline: none;
+}

@@ -1,0 +1,147 @@
+.container {
+    max-width: 800px;
+    height: 60 vh;
+    margin: 50px auto 200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column; /* Change this to column to stack items vertically */
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.details, .summary {
+    margin-bottom: 20px;
+}
+
+.details h2, .summary h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.details p, .summary p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.details p strong, .summary p strong {
+    color: #333;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    justify-content: center;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0070f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 5px 10px ;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+.hideOnPrint {
+    /* Style for hiding elements during print */
+    display: inline-block;
+}
+
+@media print {
+    .hideOnPrint {
+        display: none;
+    }
+
+    .container {
+        padding: 40px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .header {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .logo {
+        max-width: 300px; /* Adjust max width for print */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 18px; /* Smaller font size for print */
+    }
+
+    .details h2, .summary h2 {
+        font-size: 1.2em; /* Smaller font size for print */
+    }
+
+    .details p, .summary p {
+        font-size: 1em; /* Smaller font size for print */
+        margin: 10px 0;
+    }
+
+    .details p strong, .summary p strong {
+        font-size: 1em; /* Ensure strong tags have the same smaller font size */
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #0070f3;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

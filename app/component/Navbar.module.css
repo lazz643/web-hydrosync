@@ -1,0 +1,102 @@
+.container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vh;
+    z-index: 10;
+    transition-timing-function: ease-in;
+    transition-duration: 300ms;
+  }
+
+.content {
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; /* 4 units, assuming 1 unit = 4px */
+    color: grey;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.hiddenSmFlex {
+    display: none;
+}
+  
+@media (min-width: 640px) {
+    .hiddenSmFlex {
+        display: flex;
+    }
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin : 0 10px;
+    padding: 4px;
+    color: white;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    display: block;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.dropdownToggle {
+    cursor: pointer;
+    color: white;
+    padding: 8px 16px;
+    display: block;
+    font-size: 20px;
+}
+
+.dropdownMenu {
+    border-radius: 10px;
+    position: absolute;
+    top: 100%; /* Position the dropdown directly below the parent */
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px; /* Ensure a minimum width for the dropdown */
+}
+
+.dropdownItem {
+    padding: 8px 8px;
+    white-space: nowrap;
+}
+
+.dropdownItem a {
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dropdownItem a:hover {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+  
+  

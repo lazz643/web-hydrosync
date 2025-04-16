@@ -1,0 +1,68 @@
+.container {
+    background-color: white;
+    border: 5px solid #10bcf4;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    width: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+  
+.container:hover {
+    background-color: #68dcfc;
+}
+  
+.selected {
+    background-color: #68dcfc;
+    color: white;
+}
+  
+.clicked {
+    background-color: #68dcfc;
+    animation: clickEffect 0.2s;
+}
+  
+@keyframes clickEffect {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+}
+
+.ammount{
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+
+.debit{
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}

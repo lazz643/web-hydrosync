@@ -1,0 +1,62 @@
+.container{
+    position: sticky;
+    top: 50px;
+}
+
+.Pelanggan{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.Foto{
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.detailpengguna{
+    display: flex;
+    flex-direction: column;
+}
+
+.username{
+    font-weight: 550;
+    font-size: 18px;
+}
+
+.userTitle{
+    font-size: 14px;
+    color: var(--text);
+}
+
+.DaftarList{
+    list-style: none;
+}
+
+.Daftar{
+    color: var(--textSoft);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 1px;
+}
+
+.logout{
+    padding: 25px;
+    margin: 100px 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    background: none;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logout:hover{
+    background-color: #66d9ff;
+}

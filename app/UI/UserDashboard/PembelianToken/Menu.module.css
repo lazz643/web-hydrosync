@@ -1,0 +1,126 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ikon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    border-radius: 50px;
+    object-fit: cover;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+/*.Nama{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Merek{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #66d9ff;
+}
+
+.Meter{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #66d9ff;
+}
+*/
+.Menu {
+    flex: 15;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.pilihan {
+    display: flex;
+    padding: 20px;
+    gap: 50px;
+    justify-content: space-between;
+    color : green;
+}
+
+.addPilihan {
+    display: flex;
+    padding: 20px;
+    gap: 50px;
+    justify-content: space-between;
+    color: green;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form label{
+    font-size: 13px;
+    font-weight: bold;
+    color: #66d9ff;
+}
+
+.form input{
+    width: 500px;
+    height: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: solid;
+    border-color: #10bcf4;
+    color: grey;
+    margin: 10px 0px;
+}
+
+.selected {
+    background-color: blue;
+    color: black;
+ }
+
+ .selectedAmount {
+    margin-top: 20px; /* Memberikan jarak di atas elemen */
+    padding: 10px; /* Memberikan padding di dalam elemen */
+    border: 2px solid #0070f3; /* Mengatur border dengan warna biru */
+    border-radius: 8px; /* Memberikan radius pada sudut border */
+    background-color: #e0f7ff; /* Memberikan warna latar belakang biru muda */
+    color: #0070f3; /* Mengatur warna teks menjadi biru */
+    font-size: 16px; /* Mengatur ukuran font */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+ }
+
+.button{
+    width: 250px;
+    padding: 20px;
+    background-color: #10bcf4;
+    color: var(--text);
+    border: solid;
+    border-color: #66d9ff;
+    border-radius: 50px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #66d9ff;
+}

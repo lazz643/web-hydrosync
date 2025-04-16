@@ -1,0 +1,58 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    background-color: var(--bgSoft);
+    padding: 50px;
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form input{
+    padding: 30px;
+    border: solid;
+    border-color: chartreuse;
+    border-radius: 10px;
+    background-color: white;
+    color: grey;
+}
+
+.form button{
+    width: 100%;
+    padding: 25px;
+    background-color: blue;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.registerLink {
+    margin-top: 20px; /* Adjust spacing */
+    text-align: center;
+}
+
+.registerLink a {
+    color: white; /* Adjust link color */
+    text-decoration: none;
+}
+
+.registerLink a:hover {
+    text-decoration: none; /* remove underline on hover */
+}
+  
+.registerLink a:hover span {
+    text-decoration: underline; /* underline specific span on hover */
+    font-weight: bold; /* make specific span bold on hover */
+    color: blue;
+}

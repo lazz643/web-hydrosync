@@ -1,0 +1,19 @@
+.container{
+    width: 873px;
+    height: 500px;
+    background-color: var(--bgSoft);
+    padding: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 15px;
+}
+
+.container:hover{
+    background-color: #66d9ff;
+}
+
+.title{
+    font-weight: 550;
+    color: var(--text);
+    margin-bottom: 25px;
+}

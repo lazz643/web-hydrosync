@@ -1,0 +1,168 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ikon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    border-radius: 50px;
+    object-fit: cover;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+/*.Nama{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Merek{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #66d9ff;
+}
+
+.Meter{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #66d9ff;
+}
+*/
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form label{
+    font-size: 13px;
+    font-weight: bold;
+    color: #66d9ff;
+}
+
+.form input{
+    width: 500px;
+    height: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: solid;
+    border-color: #10bcf4;
+    color: grey;
+    margin: 10px 0px;
+}
+
+.errorMessage{
+    color: black;
+}
+
+.buttonCheck{
+    width: 250px;
+    padding: 20px;
+    background-color: #10bcf4;
+    color: var(--text);
+    border: solid;
+    border-color: #66d9ff;
+    border-radius: 50px;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button{
+    width: 250px;
+    padding: 20px;
+    background-color: #10bcf4;
+    color: var(--text);
+    border: solid;
+    border-color: #66d9ff;
+    border-radius: 50px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonCheck:hover{
+    background-color: #66d9ff;
+}
+
+.button:hover{
+    background-color: #66d9ff;
+}
+
+.userInfo {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #66d9ff;
+}
+
+.userInfo button {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #10bcf4;
+    transition: background-color 0.3s ease;
+}
+
+.userInfo button span {
+    margin: 1px;
+}
+
+.selectedAmount {
+    margin-top: 20px; /* Memberikan jarak di atas elemen */
+    padding: 15px; /* Memberikan padding di dalam elemen */
+    border: 3px solid #10bcf4; /* Mengatur border dengan warna biru */
+    border-radius: 20px; /* Memberikan radius pada sudut border */
+    background-color: transparent; /* Memberikan warna latar belakang biru muda */
+    color: green; /* Mengatur warna teks menjadi biru */
+    font-size: 16px; /* Mengatur ukuran font */
+    font-weight: bold;
+    text-align: center; /* Mengatur teks agar berada di tengah */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Menambahkan efek bayangan */
+    transition: transform 5s ease-in-out, opacity 0.3s ease-in-out; /* Menambahkan animasi transisi */
+    transform: scale(3); /* Ukuran awal */
+    opacity: 2; /* Opasitas awal */
+    position: relative; /* Memungkinkan penyesuaian posisi */
+    z-index: 10; /* Menempatkan di atas elemen lainnya */
+}
+
+.selectedAmount.animate {
+    transform: scale(1.1); /* Ukuran saat animasi */
+    opacity: 7; /* Opasitas saat animasi */
+}
+
+

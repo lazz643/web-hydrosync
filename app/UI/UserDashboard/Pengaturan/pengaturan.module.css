@@ -1,0 +1,173 @@
+.container {
+    max-width: 800px;
+    height: 60 vh;
+    margin: 50px auto 200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #60676d;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .buttonBack {
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    border: 3px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: aliceblue;
+  }
+
+  .button1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .buttonSave {
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    border: 3px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 55%;
+    color: aliceblue;
+  }
+  .label {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #60676d;
+    margin-left: 10px;
+  }
+  .input {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid grey;
+    background-color: aliceblue;
+    color: #60676d;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .buttonUpdate {
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    border: 3px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 55%;
+    color: aliceblue;
+ 
+  }
+  
+  .button1 {
+    margin-right: 20px;
+  }
+  .containerProfile {
+    margin-top: 20px; /* Keeps the top margin */
+    margin-bottom: 20px; /* Adds bottom margin */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex; /* Ensure the flex properties are applied */
+    flex-direction: column; /* Keeps the direction column as specified */
+  }
+
+  .imageProfile {
+    border-radius: 50%;
+  }
+  .buttonEditImage {
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    border: 3px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+  }
+  .containerInfo {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid grey;
+    background-color: aliceblue;
+    color: #60676d;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerUploadImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100vh;
+    height: 250px;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  .buttonDeleteImage {
+    width: 100px;
+    height: 35px;
+    background-color: blue;
+    border: 3px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  .inputFile {
+    max-width: max-content;
+    display: block;
+  }
+  .loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .loadingBox {
+    background-color: #00f1de;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .grayText {
+    color: #60676d;
+  }

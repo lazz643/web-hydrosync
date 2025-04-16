@@ -1,0 +1,39 @@
+.container{
+    position: relative;
+}
+
+.item{
+    background-color: #10bcf4;
+    padding: 25px 0px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.item:hover, .active{
+    background-color: #66d9ff;
+}
+
+
+.bgContainer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.texts{
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.isi{
+    font-size: 25px;
+    font-weight: 550;
+    color: white;
+}
