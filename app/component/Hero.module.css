@@ -17,13 +17,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 12px 12px;
 }
 .itemContent {
   background-color: var(--bgSoft);
   padding: 50px;
   border-radius: 15px;
-  min-width: 200px;
-  height: 500px;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,11 +35,13 @@
 .boxBtnRole {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  width: 100%;
+  justify-content: space-between;
 }
 .btnRole {
   background-color: transparent;
-  padding: 8px 56px;
+  padding: 8px 0px;
+  width: 46%;
   font-size: var(--fontS2);
   font-weight: bold;
   color: var(--sekunder);
@@ -52,14 +57,18 @@
   text-align: center;
   color: var(--sekunder);
 }
-.registerLink a {
+.registerLink p {
   color: white; /* Adjust link color */
   text-decoration: none;
 }
-.registerLink a:hover {
+.registerLink button {
+  background-color: transparent;
+  font-size: var(--fontS2);
+  border: none;
+  color: var(--white);
   text-decoration: none; /* remove underline on hover */
 }
-.registerLink a:hover span {
+.registerLink button:hover {
   text-decoration: underline; /* underline specific span on hover */
   font-weight: bold; /* make specific span bold on hover */
   color: var(--sekunder);
