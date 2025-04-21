@@ -1,24 +1,38 @@
-import React from "react";
-import styles from "@/app/component/Hero.module.css"
+"use client";
+import React, { useState } from "react";
+import styles from "@/app/component/Hero.module.css";
 import Link from "next/link";
+import LoginPage from "../Login/page";
+import LoginPageAdmin from "../LoginAdmin/page";
 
-const Hero = ({Heading,Message}) => {
-    return (
-        <div className={styles.container}>
-            <div className={styles.overlay}/>
-            <div className={styles.content}>
-                <h2>{Heading}</h2>
-                <p>{Message}</p>
-                <Link href="/Login">
-                    <button className={styles.button}>User Login</button>
-                </Link>
-                <Link href="/LoginAdmin">
-                    <button className={styles.button}>Admin Login</button>
-                </Link>
-            </div>
-           
+const Hero = () => {
+  const [role, setRole] = useState("user");
+  return (
+    <div className={styles.container}>
+      <div className={styles.contentL}></div>
+      <div className={styles.contentR}>
+        <div className={styles.itemContent}>
+          <div className={styles.boxBtnRole}>
+            <button className={`${styles.btnRole} ${role === "user" ? styles.roleActive : ""}`} onClick={() => setRole("user")}>
+              User
+            </button>
+            <button className={`${styles.btnRole} ${role === "admin" ? styles.roleActive : ""}`} onClick={() => setRole("admin")}>
+              Admin
+            </button>
+          </div>
+          {role === "user" ? <LoginPage /> : <LoginPageAdmin />}
+
+          {/* Link to RegisterAdmin page */}
+          <div className={styles.registerLink}>
+            Belum memiliki akun?{" "}
+            <Link href="/Register">
+              Silahkan klik <span>Register</span>
+            </Link>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default Hero;
