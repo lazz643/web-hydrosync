@@ -13,7 +13,7 @@
 }
 .form button {
   padding: 14px;
-  background-color: rgba(12, 75, 135, 1);
+  background-color: var(--sekunder);
   border: none;
   color: var(--white);
   cursor: pointer;

@@ -4,9 +4,12 @@ import styles from "@/app/component/Hero.module.css";
 import Link from "next/link";
 import LoginPage from "../Login/page";
 import LoginPageAdmin from "../LoginAdmin/page";
+import RegisterPage from "../Register/page";
+import RegisterPageAdmin from "../RegisterAdmin/page";
 
 const Hero = () => {
   const [role, setRole] = useState("user");
+  const [act, setAct] = useState("login");
   return (
     <div className={styles.container}>
       <div className={styles.contentL}></div>
@@ -20,15 +23,27 @@ const Hero = () => {
               Admin
             </button>
           </div>
-          {role === "user" ? <LoginPage /> : <LoginPageAdmin />}
+          {role === "user" && act === "login" && <LoginPage />}
+          {role === "admin" && act === "login" && <LoginPageAdmin />}
+          {role === "user" && act === "regis" && <RegisterPage />}
+          {role === "admin" && act === "regis" && <RegisterPageAdmin />}
 
           {/* Link to RegisterAdmin page */}
-          <div className={styles.registerLink}>
-            Belum memiliki akun?{" "}
-            <Link href="/Register">
-              Silahkan klik <span>Register</span>
-            </Link>
-          </div>
+          {act === "login" ? (
+            <div className={styles.registerLink}>
+              Belum memiliki akun?{" "}
+              <p>
+                Silahkan klik <button onClick={() => setAct("regis")}>Register</button>
+              </p>
+            </div>
+          ) : (
+            <div className={styles.registerLink}>
+              Sudah memiliki akun?{" "}
+              <p>
+                Silahkan klik <button onClick={() => setAct("login")}>Login</button>
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import styles from "@/app/UI/Register/Register.module.css";
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
 import { useRouter } from "next/navigation"; // Import useRouter from Next.js
 
 const RegisterPageAdmin = () => {
@@ -18,9 +18,9 @@ const RegisterPageAdmin = () => {
   const changeFieldHandler = (field, value) => {
     setField({
       ...Field,
-      [field]: value
+      [field]: value,
     });
-  }
+  };
 
   const onSubmitChange = async () => {
     console.log("Mengirim data ke server...");
@@ -30,7 +30,7 @@ const RegisterPageAdmin = () => {
       console.log("Respon dari server:", response);
       setLoading(false);
       alert("Pendaftaran akun berhasil");
-      router.push('/LoginAdmin'); // Redirect to /app/Login upon successful registration
+      router.push("/LoginAdmin"); // Redirect to /app/Login upon successful registration
     } catch (err) {
       console.error("Terjadi kesalahan:", err);
       setLoading(false);
@@ -40,7 +40,7 @@ const RegisterPageAdmin = () => {
         } else if (err.response.status === 500) {
           alert("Server error: Unable to register");
         } else if (err.response.status === 422) {
-          alert('Please complete all fields');
+          alert("Please complete all fields");
         } else {
           alert(`Error: ${err.response.status} - ${err.response.statusText}`);
         }
@@ -50,21 +50,25 @@ const RegisterPageAdmin = () => {
         alert("Connection error: Please wait and try again...");
       }
     }
-  }
+  };
 
   return (
-    <div className={styles.container}>
-      <form action="" className={styles.form} onSubmit={(e) => {
+    <form
+      action=""
+      className={styles.form}
+      onSubmit={(e) => {
         e.preventDefault(); // Prevents the default form submission behavior
         onSubmitChange();
-      }}>
-        <input type="text" placeholder="Username" value={Field.username} onChange={(e) => changeFieldHandler('username', e.target.value)} />
-        <input type="text" placeholder="Kode Admin" value={Field.code} onChange={(e) => changeFieldHandler('code', e.target.value)} />
-        <input type="password" placeholder="Password" value={Field.password} onChange={(e) => changeFieldHandler('password', e.target.value)} />
-        <button type="submit" disabled={loading}>Register</button>
-      </form>
-    </div>
+      }}
+    >
+      <input type="text" placeholder="Username" value={Field.username} onChange={(e) => changeFieldHandler("username", e.target.value)} />
+      <input type="text" placeholder="Kode Admin" value={Field.code} onChange={(e) => changeFieldHandler("code", e.target.value)} />
+      <input type="password" placeholder="Password" value={Field.password} onChange={(e) => changeFieldHandler("password", e.target.value)} />
+      <button type="submit" disabled={loading}>
+        Register
+      </button>
+    </form>
   );
-}
+};
 
 export default RegisterPageAdmin;
