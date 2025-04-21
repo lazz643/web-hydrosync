@@ -1,58 +1,103 @@
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:90vh; /* Full screen height */
-    margin-bottom: 3rem; /* 12 units, adjust as needed */
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-image: url('https://media.istockphoto.com/id/1501129016/id/foto/meteran-air.jpg?s=612x612&w=0&k=20&c=n0ZlvtLn7wJhGXy_G_51KBSxpYA0UbyYpIu3RBLPvmQ=');
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/Hero.png");
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* bg-black/70 dalam Tailwind */
-    z-index: 2; /* z-[2] dalam Tailwind */
+.contentL {
+  flex: 1;
 }
-  
-.content {
-    padding: 1.25rem; /* p-5 dalam Tailwind (5 * 0.25rem) */
-    color: white; /* text-white dalam Tailwind */
-    z-index: 2; /* z-[2] dalam Tailwind */
-    margin-top: -10rem; /* mt-[-10rem] dalam Tailwind */
-    
+.contentR {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.itemContent {
+  background-color: var(--bgSoft);
+  padding: 50px;
+  border-radius: 15px;
+  min-width: 200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.boxBtnRole {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.btnRole {
+  background-color: transparent;
+  padding: 8px 56px;
+  font-size: var(--fontS2);
+  font-weight: bold;
+  color: var(--sekunder);
+  border: none;
+  border-radius: 50px;
+}
+.roleActive {
+  background-color: var(--sekunder);
+  color: var(--white);
+}
+
+.registerLink {
+  text-align: center;
+  color: var(--sekunder);
+}
+.registerLink a {
+  color: white; /* Adjust link color */
+  text-decoration: none;
+}
+.registerLink a:hover {
+  text-decoration: none; /* remove underline on hover */
+}
+.registerLink a:hover span {
+  text-decoration: underline; /* underline specific span on hover */
+  font-weight: bold; /* make specific span bold on hover */
+  color: var(--sekunder);
 }
 
 .content h2 {
-    font-size: 3rem; /* text-5xl dalam Tailwind */
-    font-weight: bold; /* font-bold dalam Tailwind */
-    align-items: center;
-    justify-content: center;
+  font-size: 3rem; /* text-5xl dalam Tailwind */
+  font-weight: bold; /* font-bold dalam Tailwind */
+  align-items: center;
+  justify-content: center;
 }
-
 .content p {
-    font-size: 2rem; /* text-5xl dalam Tailwind */
-    font-weight: light; /* font-bold dalam Tailwind */
-    align-items: center;
-    justify-content: center;
+  font-size: 2rem; /* text-5xl dalam Tailwind */
+  font-weight: light; /* font-bold dalam Tailwind */
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
-    padding: 0.5rem 2rem; /* px-8 dan py-2 dalam Tailwind */
-    border: 1px solid;
-    border-color: white;
-    border-radius: 25px;
-    color: azure;
-    gap: 50px;
-    margin: 20px 20px 0px 0px;
-    background-color: transparent;
-}  
-
+  padding: 0.5rem 2rem; /* px-8 dan py-2 dalam Tailwind */
+  border: 1px solid;
+  border-color: white;
+  border-radius: 25px;
+  color: azure;
+  gap: 50px;
+  margin: 20px 20px 0px 0px;
+  background-color: transparent;
+}
 .content button:hover {
-    background-color:gray;
+  background-color: gray;
+}
+
+@media (max-width: 900px) {
+  .container {
+    background-image: url("/Hero2.jpg");
+  }
+
+  .contentL {
+    display: none;
+  }
 }
